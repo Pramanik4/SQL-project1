@@ -3,46 +3,56 @@
 ## EASY LEVEL
 ## 1-Retrieve all columns for employees with the job title 'Data Analyst'.
 
-#### SELECT * FROM dbo.Employees
-#### WHERE job_title = 'Data Analyst';
+select * from employees
+where job_title = 'Data Analyst';
 
-![image](https://github.com/Pramanik4/SQL-project1/assets/75212387/f1afb38b-9786-4c18-984e-d84f1f2e3d1f)
+![image](https://github.com/Pramanik4/SQL-project1/assets/75212387/aad9febb-8923-427f-89a6-e81ae4c143fb)
+
 
 ## 2-List distinct job categories present in the dataset.
 
 #### SELECT DISTINCT job_title FROM dbo.Employees;
 
-![image](https://github.com/Pramanik4/SQL-project1/assets/75212387/fcd00442-d755-435d-afed-a6cc3a361468)
+select distinct job_category from employees;
+
+![image](https://github.com/Pramanik4/SQL-project1/assets/75212387/3b75918f-f49f-4bb7-a8f2-8a32a71505f6)
 
 ## 3-Find the average salary (in USD) for all job categories.
 
-#### SELECT job_category, AVG(salary_in_usd) FROM dbo.Employees
-#### GROUP BY job_category;
+select job_category, avg(salary_in_usd) from employees
+group by job_category;
 
-![image](https://github.com/Pramanik4/SQL-project1/assets/75212387/39cc49f2-ab67-4520-98c8-a9a0a507273c)
+![image](https://github.com/Pramanik4/SQL-project1/assets/75212387/14c54b5a-e88b-4ef3-b855-851b9c80162b)
 
 ## MODERATE LEVEL
 ## 1-Identify the top 5 job titles with the highest average salary.
 
-#### SELECT TOP 5 job_title, AVG(salary) AS avg_salary FROM dbo.Employees
-#### GROUP BY job_title
-#### ORDER BY avg_salary DESC;
+#### select job_title, avg (salary) as avg_sal from employees
+#### group by job_title
+#### order by avg_sal desc
+#### limit 5;
 
-![image](https://github.com/Pramanik4/SQL-project1/assets/75212387/bc3ce210-9489-4dab-925e-240d1b890ee6)
+![image](https://github.com/Pramanik4/SQL-project1/assets/75212387/34a9a845-d968-4c92-9743-b72a9cef9646)
+
 
 ## 2-Calculate the total number of employees for each experience level.
 
 #### select experience_level, count(experience_level) from dbo.Employees
 #### group by experience_level;
 
-![image](https://github.com/Pramanik4/SQL-project1/assets/75212387/5fdb02dd-ecfe-4cef-bd47-9e0c76f13e03)
+select experience_level, count(*) as total_emp from employees
+group by experience_level;
+
+![image](https://github.com/Pramanik4/SQL-project1/assets/75212387/0e2ab00e-d788-411e-acaf-f8e02712e041)
 
 ## 3-Retrieve the job title and salary for employees with a salary greater than $100,000 USD.
 
-#### select job_title, salary_in_usd from dbo.Employees
-#### where salary_in_usd > 100000;
+select job_title, salary_in_usd from employees
+where salary_in_usd > 100000;
 
-![image](https://github.com/Pramanik4/SQL-project1/assets/75212387/8c401522-224a-47a2-953f-e12b8e2fb2ea)
+![image](https://github.com/Pramanik4/SQL-project1/assets/75212387/a335429b-0db2-48f8-b842-b5ce97c5d485)
+
+# START
 
 ## 4-Determine the average salary for each company size.
 
