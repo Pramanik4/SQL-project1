@@ -100,9 +100,27 @@
 
 ## 3-Determine the company location with the highest average salary for employees with an experience level of 'Mid-Level'.
 
+#### select company_location, avg(salary) as avg_sal from dbo.Employees
+#### where experience_level = 'Mid-level'
+#### group by company_location
+#### order by avg_sal desc
+
+![image](https://github.com/Pramanik4/SQL-project1/assets/75212387/5da1b05d-ea94-4b4d-81cd-28f7596180a5)
+
 ## 4-Identify the job title with the highest salary in each job category.
 
-## 5-Calculate the average salary for employees in each company size, considering only those with an 'Advanced' experience level.
+#### select distinct job_category,job_title, max(salary) from dbo.Employees
+#### group by job_category,job_title
+
+![image](https://github.com/Pramanik4/SQL-project1/assets/75212387/71a0ddd0-dbf4-435c-8790-015b9afd6beb)
+
+## 5-Calculate the average salary for employees in each company size, considering only those with an 'Senior' experience level.
+
+#### select company_size, avg(salary) as avg_sal from dbo.Employees
+#### where experience_level = 'Senior'
+#### group by company_size;
+
+![image](https://github.com/Pramanik4/SQL-project1/assets/75212387/1d1e98a8-9fe9-4a16-b6aa-e0c48bed83bb)
 
 ## 6-Find the job title with the highest salary increase from the year 2022 to 2024.
 
