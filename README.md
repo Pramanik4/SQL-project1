@@ -101,6 +101,17 @@ order by high_sal desc;
 
 ## 2-Calculate the salary growth percentage for each job title between the years 2022 and 2023.
 
+select job_title,
+((avg(CASE WHEN work_year = 2023 THEN salary END) - avg(CASE WHEN work_year = 2022 THEN salary END))
+/
+avg(CASE WHEN work_year = 2022 THEN salary END)) 
+* 100 AS growth_percent
+from employees
+where work_year in (2022, 2023)
+group by job_title;
+
+![image](https://github.com/Pramanik4/SQL-project1/assets/75212387/9c2c91fe-03a3-45e6-8eb6-c2a65acd7fea)
+
 ## 3-Determine the company location with the highest average salary for employees with an experience level of 'Mid-Level'.
 
 select company_location, avg(salary) as avg_sal from employees
