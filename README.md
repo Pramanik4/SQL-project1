@@ -138,6 +138,122 @@ group by company_size;
 
 ## 6-Find the job title with the highest salary increase from the year 2022 to 2024.
 
+select job_title,
+(avg(CASE WHEN work_year = 2024 THEN salary END) - avg(CASE WHEN work_year = 2022 THEN salary END)) as increase_sal
+from employees
+where work_year in (2022, 2024)
+group by job_title
+order by increase_sal desc;
+
+![image](https://github.com/Pramanik4/SQL-project1/assets/75212387/34d5f289-31bf-407b-8a81-63af87858c3b)
+
+we are getting NULL values for increase_sal, it could be due to Missing data: the COALESCE function is used to replace potential NULL values with 0.
+
+select job_title,
+COALESCE(AVG(CASE WHEN work_year = 2024 THEN salary END), 0) - COALESCE(AVG(CASE WHEN work_year = 2022 THEN salary END), 0) AS increase_sal
+from employees
+where work_year in (2022, 2024)
+group by job_title
+order by increase_sal desc;
+
+![image](https://github.com/Pramanik4/SQL-project1/assets/75212387/cb5c10f5-68c6-492d-a332-d3b6d0520db8)
+
+# SQL Project 2
+
+## Easy Level:
+## 1-Retrieve all columns for all rows in the dataset.
+
+select * from aqi;
+
+
+## 2-Display unique countries present in the dataset.
+
+select distinct country from aqi;
+
+
+## 3-Count the total number of records in the dataset.
+
+select count(*) as total_records from aqi;
+
+
+## 4-List all distinct pollutants recorded in the dataset.
+
+select distinct pollutant_id from aqi;
+
+
+## 5-Retrieve records for a specific city of your choice.
+
+select * from aqi
+where city = 'Mumbai';
+
+
+## Intermediate Level:
+## 1-Calculate the average pollutant_avg for each pollutant across all stations.
+
+select distinct pollutant_id, avg(pollutant_avg) as avg_pollutant from aqi
+group by pollutant_id;
+
+![image](https://github.com/Pramanik4/SQL-project1/assets/75212387/e9c1719f-c74e-4a0e-baf9-8cf1fdc2217a)
+
+## 2-Find the station(s) with the highest pollutant_max value and display their details.
+
+select station, max(pollutant_max) as high_pollutant from aqi
+group by station;
+
+![image](https://github.com/Pramanik4/SQL-project1/assets/75212387/fdffc272-38d8-4eff-88cd-7b386c9b9795)
+
+## 3-List the states where the air quality is not recorded (missing entries for pollutant values).
+
+select state from aqi
+where pollutant_id is null;
+
+![image](https://github.com/Pramanik4/SQL-project1/assets/75212387/f7718de6-60c7-43e8-a6e9-7b4d86a2ebb6)
+
+## 4-Retrieve the records where the latitude is greater than a specified value.
+
+select * from aqi
+where latitude > 25;
+
+![image](https://github.com/Pramanik4/SQL-project1/assets/75212387/ade2de7b-21b1-4290-b744-3bfa49632a00)
+
+## 5-Display the city and station with the lowest pollutant_min value.
+
+select city, station, min(pollutant_min) from aqi
+group by city, station;
+
+![image](https://github.com/Pramanik4/SQL-project1/assets/75212387/8d34d2ff-3f67-44ac-946b-7c178d037cd1)
+
+## Advanced Level:
+## 1-Identify the country with the highest overall pollutant_avg value.
+
+select country, max(pollutant_avg) from aqi
+group by country;
+
+![image](https://github.com/Pramanik4/SQL-project1/assets/75212387/51101353-4a9c-4e15-b8e5-3cae01bcc982)
+
+## 2-Determine the top 3 cities with the lowest average pollutant_avg values.
+
+select city, min(pollutant_avg) as avg_pollutant from aqi
+group by city
+order by avg_pollutant
+limit 3;
+
+![image](https://github.com/Pramanik4/SQL-project1/assets/75212387/4cdb5201-6b23-480f-8a3c-55e1244a66de)
+
+## 3-Calculate the percentage change in pollutant_avg from the previous update for a specific station.
+
+## 4-Rank the stations based on their total pollutant_avg values in descending order.
+
+select station, sum(pollutant_avg) as total_avg_pollutant from aqi
+group by station
+order by total_avg_pollutant desc;
+
+![image](https://github.com/Pramanik4/SQL-project1/assets/75212387/e48840df-4f4b-4ced-a414-09cbf1123561)
+
+## 5-Find the city where the air quality has shown the most improvement (highest decrease in pollutant_avg).
+
+
+
 
 
 
