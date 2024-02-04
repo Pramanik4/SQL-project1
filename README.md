@@ -257,6 +257,16 @@ order by total_avg_pollutant desc;
 
 ## 5-Find the city where the air quality has shown the most improvement (highest decrease in pollutant_avg).
 
+#### EXTRA
+## Count the total number of columns in the dataset.
+
+SELECT COUNT(*) AS total_columns
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME = 'aqi';
+
+![image](https://github.com/Pramanik4/SQL-project1/assets/75212387/b9e0bbdf-305a-4801-a410-304f29d9518b)
+
+
 
 
 
