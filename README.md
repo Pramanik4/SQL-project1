@@ -165,27 +165,32 @@ order by increase_sal desc;
 
 select * from aqi;
 
+![image](https://github.com/Pramanik4/SQL-project1/assets/75212387/92bdee65-68cf-43fe-8c6b-985f13ccf798)
 
 ## 2-Display unique countries present in the dataset.
 
 select distinct country from aqi;
 
+![image](https://github.com/Pramanik4/SQL-project1/assets/75212387/c86babca-41ea-4a77-8caa-df5e5e3b03ca)
 
 ## 3-Count the total number of records in the dataset.
 
 select count(*) as total_records from aqi;
 
+![image](https://github.com/Pramanik4/SQL-project1/assets/75212387/aaaa0e93-7e9e-49c7-8aee-a1e7643f58d6)
 
 ## 4-List all distinct pollutants recorded in the dataset.
 
 select distinct pollutant_id from aqi;
 
+![image](https://github.com/Pramanik4/SQL-project1/assets/75212387/7e873034-aa6d-4984-ab61-1174ec1dd6b3)
 
 ## 5-Retrieve records for a specific city of your choice.
 
 select * from aqi
 where city = 'Mumbai';
 
+![image](https://github.com/Pramanik4/SQL-project1/assets/75212387/a47f802c-281c-497d-9c90-787a741fcb82)
 
 ## Intermediate Level:
 ## 1-Calculate the average pollutant_avg for each pollutant across all stations.
