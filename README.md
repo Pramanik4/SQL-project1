@@ -266,6 +266,58 @@ WHERE TABLE_NAME = 'aqi';
 
 ![image](https://github.com/Pramanik4/SQL-project1/assets/75212387/b9e0bbdf-305a-4801-a410-304f29d9518b)
 
+# SQL Project3
+
+## Easy:
+## 1-Retrieve the names of all tracks released in the year 2021.
+
+select track_name, released_year from music
+where released_year = 2021;
+
+![image](https://github.com/Pramanik4/SQL-projects/assets/75212387/c47373a4-dfb5-41c6-a680-ae5f8d56d87d)
+
+## 2-Find the total number of streams for all tracks in the dataset.
+
+select track_name, sum(streams) from music
+group by track_name;
+
+![image](https://github.com/Pramanik4/SQL-projects/assets/75212387/2870f5c4-e5db-4f19-a062-e11ca516f7b4)
+
+## 3-List the distinct musical keys present in the dataset.
+
+
+
+## 4-Count the number of tracks that are present in Spotify playlists.
+
+select count(track_name) as No_tracks from music;
+
+![image](https://github.com/Pramanik4/SQL-projects/assets/75212387/02c3ffca-abe6-4c8a-9624-8ebbb5b75795)
+
+## 5-Find the tracks with the highest danceability percentage.
+
+
+
+## Intermediate:
+## 1-Calculate the average energy percentage for tracks released in 2020.
+## 2-Identify the top 5 artists with the most tracks in Spotify charts.
+## 3-List the tracks with the highest instrumentalness percentage.
+## 4-Find the total number of streams for tracks in both Spotify and Apple Music playlists.
+## 5-Retrieve the tracks released in the month of May.
+
+## Advanced:
+## 1-Identify the artist(s) with the highest average valence percentage.
+## 2-List the top 10 tracks with the most streams in Spotify charts.
+## 3-Find the tracks with danceability percentage above 80% and energy percentage below 60%.
+## 4-Calculate the average acousticness percentage for tracks in Deezer charts.
+## 5-Retrieve the tracks released on a weekend (Saturday or Sunday).
+
+## Expert:
+## 1-Identify the artist(s) with the highest total streams across all their tracks.
+## 2-Find the tracks that are present in both Apple Music and Deezer charts.
+## 3-Calculate the median danceability percentage for all tracks.
+## 4-Identify the tracks with the highest liveness percentage in Spotify playlists.
+## 5-Find the tracks with the highest speechiness percentage in Shazam charts.
+
 
 
 
