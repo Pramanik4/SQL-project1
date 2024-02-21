@@ -315,8 +315,23 @@ select count(track_name) as No_tracks from music;
 ## 1-Identify the artist(s) with the highest total streams across all their tracks.
 ## 2-Find the tracks that are present in both Apple Music and Deezer charts.
 ## 3-Calculate the median danceability percentage for all tracks.
-## 4-Identify the tracks with the highest liveness percentage in Spotify playlists.
+## 4-Identify the tracks with the highest liveness percntage in Spotify playlists.
 ## 5-Find the tracks with the highest speechiness percentage in Shazam charts.
+
+
+# SQL Project 4
+
+![image](https://github.com/Pramanik4/SQL-projects/assets/75212387/fd188dba-cec8-4b8a-a899-af4944ba3203)
+
+## 1. Retrieve all employees' information.
+
+![image](https://github.com/Pramanik4/SQL-projects/assets/75212387/6c00238d-1579-48b7-9d6d-24a5acd93ed7)
+
+## 2. Retrieve the names of all employees in the Sales department.
+
+![image](https://github.com/Pramanik4/SQL-projects/assets/75212387/149b922d-9f9c-44a3-b5b8-54802f7bec4f)
+
+## 3. 
 
 
 
