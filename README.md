@@ -359,6 +359,18 @@ Retrieve the total salary expense for the Sales department.
 
 ![image](https://github.com/Pramanik4/SQL-projects/assets/75212387/6f35aaf9-2385-4354-b913-046a33df3e1d)
 
+Retrieve the employee(s) with the lowest salary.
+
+![image](https://github.com/Pramanik4/SQL-projects/assets/75212387/f0f2ac6d-6c5e-4330-89cc-c28c3057ed0c)
+
+Retrieve the department(s) with more than 2 employees.
+
+![image](https://github.com/Pramanik4/SQL-projects/assets/75212387/ce7dcd9f-d4f7-469e-9995-89cd911d6f50)
+
+
+
+
+
 
 
 
