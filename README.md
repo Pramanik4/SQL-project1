@@ -331,7 +331,42 @@ select count(track_name) as No_tracks from music;
 
 ![image](https://github.com/Pramanik4/SQL-projects/assets/75212387/149b922d-9f9c-44a3-b5b8-54802f7bec4f)
 
-## 3. 
+## 3. Retrieve the total number of employees in each department.
+
+![image](https://github.com/Pramanik4/SQL-projects/assets/75212387/58f875b8-561a-4e4c-8779-d8b0f4757fe4)
+
+SELECT MAX(emp_salary) AS highest_salary FROM employees;
+
+![image](https://github.com/Pramanik4/SQL-projects/assets/75212387/5f56d66b-8adb-4bb6-add4-f72ffcd3efff)
+
+Retrieve the average salary of all employees.
+
+![image](https://github.com/Pramanik4/SQL-projects/assets/75212387/9bd5aa99-d1f1-4f2f-8bcf-2f056727aeac)
+
+Retrieve the employee with the highest salary.
+
+![image](https://github.com/Pramanik4/SQL-projects/assets/75212387/9adcdc0e-9b00-4a3b-a9e5-941eae08ced7)
+
+Retrieve the names of employees whose salaries are above 55000.
+
+![image](https://github.com/Pramanik4/SQL-projects/assets/75212387/faac9a6f-25ea-424f-b740-a9638cad9162)
+
+Combined two tables and give it a name
+
+![image](https://github.com/Pramanik4/SQL-projects/assets/75212387/189aaee7-f769-4ec6-b085-77551474c90c)
+
+Retrieve the total salary expense for the Sales department.
+
+![image](https://github.com/Pramanik4/SQL-projects/assets/75212387/6f35aaf9-2385-4354-b913-046a33df3e1d)
+
+
+
+
+
+
+
+
+
 
 
 
