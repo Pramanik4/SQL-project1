@@ -367,6 +367,10 @@ Retrieve the department(s) with more than 2 employees.
 
 ![image](https://github.com/Pramanik4/SQL-projects/assets/75212387/ce7dcd9f-d4f7-469e-9995-89cd911d6f50)
 
+Retrieve the department(s) where no employee earns more than 60000.
+
+![image](https://github.com/Pramanik4/SQL-projects/assets/75212387/534f39df-0ec2-4390-8baa-a5cb99d9fb20)
+
 
 
 
