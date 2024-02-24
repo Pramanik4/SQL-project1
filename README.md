@@ -1,4 +1,11 @@
-# SQL-project1
+
+## Table of Contents
+
+1. [SQL Project 1](#sql-project1)
+2. [SQL Project 2](#sql-project2)
+
+
+# SQL-project 1
 
 ## EASY LEVEL
 ## 1-Retrieve all columns for employees with the job title 'Data Analyst'.
