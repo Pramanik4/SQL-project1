@@ -1,11 +1,11 @@
 
 ## Table of Contents
 
-1. [SQL Project 1](#sql-project1)
-2. [SQL Project 2](#sql-project2)
+1. [Challenge1](#challenge1)
+2. [Challenge2](#challenge2)
 
 
-# SQL-project 1
+# Challenge1
 
 ## EASY LEVEL
 ## 1-Retrieve all columns for employees with the job title 'Data Analyst'.
@@ -165,7 +165,7 @@ order by increase_sal desc;
 
 ![image](https://github.com/Pramanik4/SQL-project1/assets/75212387/cb5c10f5-68c6-492d-a332-d3b6d0520db8)
 
-# SQL Project 2
+# Challenge2
 
 ## Easy Level:
 ## 1-Retrieve all columns for all rows in the dataset.
